@@ -20,7 +20,7 @@ public class One {
         }
         if(!stack.isEmpty())
             return "NO";
-        return "YES";
+        return "YES" ;
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
