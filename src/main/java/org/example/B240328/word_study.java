@@ -21,16 +21,13 @@ public class word_study {
 
         Integer[] count = new Integer[26];
         Arrays.fill(count, 0);
+        int max = 0;
 
         for(int i=0; i<str.length(); i++){
             count[str.charAt(i)-65]++;
-        }
-
-
-        int max = 0;
-        for(int i=1; i<count.length; i++){
-            if(count[i] > count[max])
-                max = i;
+            if(max < count[str.charAt(i)-65]){
+                max = str.charAt(i)-65;
+            }
         }
 
         Arrays.sort(count,Collections.reverseOrder());
