@@ -36,8 +36,7 @@ public class absolute_value_heap {
             int x = Integer.parseInt(br.readLine());
             // x의 값이 0이고 큐가 비어있지 않을 경우
             if(x == 0 && !q.isEmpty()){
-                int temp[] = q.poll();
-                sb.append(temp[1]+"\n");
+                sb.append(q.poll()[1]+"\n");
             }else if(x == 0){
                 sb.append(x +"\n");
             }else {
